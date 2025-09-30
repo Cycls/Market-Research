@@ -1,0 +1,4 @@
+cycls
+requests
+openai
+python-dotenv
