@@ -27,13 +27,7 @@ The agent uses an advanced mechanism that combines intelligent search with the p
 4.  **Analysis & Generation**: The collected data is sent to the **OpenAI (GPT-4o mini)** model with a precise prompt to summarize, analyze, and organize it into a comprehensive report.
 5.  **Report Presentation**: It presents the user with a structured report containing an overview, a list of competitors, a comparison table, and key insights, citing the sources used.
 
-## 🛠️ Tech Stack
 
--   **Framework**: [Cycls](https://cycls.com/)
--   **Language**: Python
--   **APIs**:
-    -   **OpenAI API (GPT-4o mini)**: For conversational logic and data analysis.
-    -   **Exa.ai API**: For advanced, meaning-based search.
 
 
 ### Less is more
