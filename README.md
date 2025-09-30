@@ -1,33 +1,35 @@
-# Market Research Agent
+# Market Researcher
 
 An AI agent for instant competitive intelligence and market analysis for any company.
 
-**Live Demo:** [**Market Research Agent**](https://market-research-agent-280879789566.me-central1.run.app/)
+**Live Demo:** https://market-research-agent-280879789566.me-central1.run.app/
 
 ---
 
 ## 🎯 About The Project
 
-This agent is designed to be your intelligent assistant for market research. Instead of spending hours on manual research, you can simply ask the agent for information on any company, and it will do the hard work to provide you with a comprehensive and structured report.
+This AI agent provides instant market and competitive intelligence reports for any company. It researches competitors, analyzes market positioning, and generates comparison tables with key features and pricing to deliver actionable insights. The process begins by identifying a target company through conversation, then uses the **Exa.ai API** for deep searches. Finally, it sends the extracted content to the **OpenAI (GPT-4o mini)** model to analyze and structure the final report.
 
-### ✨ Key Features
+## 🛠️ Tech Stack
 
--   Researches companies and their competitors.
--   Analyzes market positioning and differentiators.
--   Generates comparison tables with key features and pricing.
--   Provides actionable insights from multiple trusted sources.
+-   **Framework**: [Cycls](https://cycls.com/)
+-   **Language**: Python
+-   **APIs**:
+    -   **OpenAI API (GPT-4o mini)**: For conversational logic and data analysis.
+    -   **Exa.ai API**: For advanced, meaning-based search.
 
-## ⚙️ How It Works
+## 🚀 Getting Started
 
-The agent uses an advanced mechanism that combines intelligent search with the power of Large Language Models (LLMs) to deliver accurate results:
+To run this project locally, clone the repository, create a `.env` file with your API keys (`CYCLS_API_KEY`, `OPENAI_API_KEY`, `EXA_API_KEY`), install dependencies, and run the agent.
 
-1.  **Understanding the Request**: The agent starts a conversation with the user to identify the target company.
-2.  **AI-Augmented Search**: It uses the **Exa.ai API** to perform deep, targeted searches about the company, its competitors, and industry analysis.
-3.  **Data Extraction**: It gathers the most relevant content from the top search results.
-4.  **Analysis & Generation**: The collected data is sent to the **OpenAI (GPT-4o mini)** model with a precise prompt to summarize, analyze, and organize it into a comprehensive report.
-5.  **Report Presentation**: It presents the user with a structured report containing an overview, a list of competitors, a comparison table, and key insights, citing the sources used.
+```bash
+# 1. Clone the repository
+git clone [https://github.com/your-username/market-research-agent.git](https://github.com/your-username/market-research-agent.git)
+cd market-research-agent
 
-
-
+# 2. Create and populate your .env file
+# Example: echo "OPENAI_API_KEY=sk-..." > .env
+```
+---
 
 ### Less is more
