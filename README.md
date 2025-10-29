@@ -2,7 +2,7 @@
 
 An AI agent for instant competitive intelligence and market analysis for any company.
 
-**Live Demo:** https://market-research-agent-280879789566.me-central1.run.app/
+**Live Demo:** https://market-researcher.cycls.ai/
 
 ---
 
