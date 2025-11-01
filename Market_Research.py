@@ -3,6 +3,7 @@ import os
 import json
 import requests
 from typing import List, Dict
+from ui import header, intro
 
 Header = """
 # Market Research Agent
@@ -56,7 +57,7 @@ Provide:
     source_urls = list(set([s["url"] for s in sources if s["url"]]))[:10]
     return response + "\n\n---\n**Sources:**\n" + "\n".join([f"- {url}" for url in source_urls])
 
-@agent(header= Header)
+@agent(header=header, intro=intro)
 async def market_research_agent(context):
     """Conversational market research agent"""
     import os
@@ -95,3 +96,4 @@ Your job is to chat with users and help them with market research.
     return response_msg.content
 
 agent.cycls(prod=False)
+
