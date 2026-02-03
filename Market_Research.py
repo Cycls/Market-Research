@@ -32,7 +32,7 @@ def perform_research(exa_key: str, openai_client, company_name: str) -> str:
     sources = [{"url": c.get("url", ""), "title": c.get("title", ""), "text": c.get("text", "")[:2000]} for c in contents]
     prompt = f"Based on sources about {company_name}:\n{json.dumps(sources, indent=2)}\n\nProvide: 1. Brief overview of {company_name} 2. 4-6 main competitors 3. Comparison table (markdown) with: Company, Category, Target Customer, Key Features, Pricing, Website 4. Key insights and differentiators"
     response = openai_client.chat.completions.create(model="gpt-4o-mini", messages=[{"role": "user", "content": prompt}], temperature=0.2).choices[0].message.content
-    source_urls = list[Any](set[Any]([s["url"] for s in sources if s["url"]]))[:10]
+    source_urls = list(set([s["url"] for s in sources if s["url"]]))[:10]
     return response + "\n\n---\n**Sources:**\n" + "\n".join([f"- {url}" for url in source_urls])
 
 @cycls.app("market-researcher",pip=["requests", "openai", "python-dotenv"], copy=[".env", "ui.py"], title="market-researcher", header=header, intro=intro,analytics=True)
