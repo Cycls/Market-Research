@@ -1,3 +1,4 @@
+import urllib.parse
 
 header = """
 <raw>
@@ -30,22 +31,21 @@ header = """
 </raw>
 """
 
-intro = """
+intro = f"""
 <div class="py-3">
   <div class="flex flex-wrap gap-3 justify-center">
-    <a href="https://cycls.com/send/${encodeURIComponent('Research competitors for OpenAI')}" class="group relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-medium text-gray-700 border-2 border-gray-300 rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-white focus:outline-none hover:border-gray-400 hover:shadow-xl transition-all whitespace-nowrap text-sm">
+    <a href="https://cycls.com/send/{urllib.parse.quote('Research competitors for OpenAI')}" class="group relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-medium text-gray-700 border-2 border-gray-300 rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-white focus:outline-none hover:border-gray-400 hover:shadow-xl transition-all whitespace-nowrap text-sm">
       <span>Research competitors for OpenAI</span>
     </a>
-    <a href="https://cycls.com/send/${encodeURIComponent('Analyze the market for Tesla')}" class="group relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-medium text-gray-700 border-2 border-gray-300 rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-white focus:outline-none hover:border-gray-400 hover:shadow-xl transition-all whitespace-nowrap text-sm">
+    <a href="https://cycls.com/send/{urllib.parse.quote('Analyze the market for Tesla')}" class="group relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-medium text-gray-700 border-2 border-gray-300 rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-white focus:outline-none hover:border-gray-400 hover:shadow-xl transition-all whitespace-nowrap text-sm">
       <span>Analyze the market for Tesla</span>
     </a>
-    <a href="https://cycls.com/send/${encodeURIComponent('Get competitive intelligence on Stripe')}" class="group relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-medium text-gray-700 border-2 border-gray-300 rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-white focus:outline-none hover:border-gray-400 hover:shadow-xl transition-all whitespace-nowrap text-sm">
+    <a href="https://cycls.com/send/{urllib.parse.quote('Get competitive intelligence on Stripe')}" class="group relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-medium text-gray-700 border-2 border-gray-300 rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-white focus:outline-none hover:border-gray-400 hover:shadow-xl transition-all whitespace-nowrap text-sm">
       <span>Get competitive intelligence on Stripe</span>
     </a>
-    <a href="https://cycls.com/send/${encodeURIComponent('Market research for Netflix')}" class="group relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-medium text-gray-700 border-2 border-gray-300 rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-white focus:outline-none hover:border-gray-400 hover:shadow-xl transition-all whitespace-nowrap text-sm">
+    <a href="https://cycls.com/send/{urllib.parse.quote('Market research for Netflix')}" class="group relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-medium text-gray-700 border-2 border-gray-300 rounded-xl shadow-lg bg-gradient-to-br from-gray-50 to-white focus:outline-none hover:border-gray-400 hover:shadow-xl transition-all whitespace-nowrap text-sm">
       <span>Market research for Netflix</span>
     </a>
   </div>
 </div>
-
 """
